@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">firstapp</string>
+    <string name="app_name">calculator</string>
     <string name="title_activity_scrolling">ScrollingActivity</string>
     <string name="large_text">
         "Material is the metaphor.\n\n"
