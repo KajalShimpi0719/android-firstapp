@@ -35,7 +35,7 @@ public class SplashActivity extends AppCompatActivity {
 //                Intent intent = new Intent(getApplicationContext(), foundersList.class);
 //                startActivity(intent);
             }
-        }, 2000);
+        }, 1000);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);

@@ -30,13 +30,15 @@ int founderImage;
         Intent intent = getIntent();
         name = intent.getStringExtra("name");
         description = intent.getStringExtra("description");
-//        founderImage = intent.getIntExtra("image");
-        Log.e("data---","data---"+name+"---"+description);
+        founderImage = intent.getIntExtra("image", 0);
+        fname.setText(name);
+        fdesc.setText(description);
+        image.setImageResource(founderImage);
 
-//        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-//            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-//            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-//            return insets;
-//        });
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            return insets;
+        });
     }
 }

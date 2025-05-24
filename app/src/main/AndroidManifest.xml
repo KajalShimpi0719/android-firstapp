@@ -6,9 +6,9 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/founders_icon"
+        android:icon="@drawable/founders"
         android:label="android_founders"
-        android:roundIcon="@mipmap/calculator2_icon_round"
+        android:roundIcon="@drawable/founders"
         android:supportsRtl="true"
         android:theme="@style/Theme.Firstapp"
         tools:targetApi="31">

@@ -38,7 +38,7 @@ public class foundersViewAdapter extends RecyclerView.Adapter<foundersViewAdapte
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         FoudersListData data = listdata.get(position);
         holder.tvName.setText(data.getName());
-        holder.tvDesc.setText(data.getDesc());
+        holder.tvDesc.setText(String.format("%s...", data.getDesc().substring(0, 20)));
         holder.ivimg.setImageResource(data.getImage());
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
